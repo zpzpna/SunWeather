@@ -1,11 +1,14 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
     compileSdk 31
-
+    viewBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.example.sunweather"
         minSdk 21
